@@ -1,0 +1,99 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "companyName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "address",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "city",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "state",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "pincode",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "mobile",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "bioDlNo",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "nonBioDlNo",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "estb",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "certification",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "webSite",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "aboutCompany",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "email",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "category",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "tin",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "alternateMobile",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "commentId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "ratings",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "linkedWord",
+            "fieldType": "String"
+        }
+    ],
+    "dto": "mapstruct",
+    "service": "serviceImpl",
+    "entityTableName": "vendor",
+    "pagination": "pagination"
+}

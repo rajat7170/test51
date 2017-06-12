@@ -1,0 +1,40 @@
+{
+    "test51App": {
+        "vendor" : {
+            "home": {
+                "title": "Vendors",
+                "createLabel": "नया Vendor बनाएँ",
+                "createOrEditLabel": "Vendor बनाएँ या संपादित करें"
+            },
+            "created": "एक नया Vendor [identifier: {{ param }}] तैयार है",
+            "updated": "एक Vendor [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Vendor [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Vendor [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Vendor"
+            },
+            "name": "Name",
+            "companyName": "Company Name",
+            "address": "Address",
+            "city": "City",
+            "state": "State",
+            "pincode": "Pincode",
+            "mobile": "Mobile",
+            "bioDlNo": "Bio Dl No",
+            "nonBioDlNo": "Non Bio Dl No",
+            "estb": "Estb",
+            "certification": "Certification",
+            "webSite": "Web Site",
+            "aboutCompany": "About Company",
+            "email": "Email",
+            "category": "Category",
+            "tin": "Tin",
+            "alternateMobile": "Alternate Mobile",
+            "commentId": "Comment Id",
+            "ratings": "Ratings",
+            "linkedWord": "Linked Word"
+        }
+    }
+}

@@ -1,0 +1,95 @@
+
+<div>
+    <h2><span data-translate="test51App.product.detail.title">Product</span> {{vm.product.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="test51App.product.productName">Product Name</span></dt>
+        <dd>
+            <span>{{vm.product.productName}}</span>
+        </dd>
+        <dt><span data-translate="test51App.product.saltName">Salt Name</span></dt>
+        <dd>
+            <span>{{vm.product.saltName}}</span>
+        </dd>
+        <dt><span data-translate="test51App.product.description">Description</span></dt>
+        <dd>
+            <span>{{vm.product.description}}</span>
+        </dd>
+        <dt><span data-translate="test51App.product.packagingType">Packaging Type</span></dt>
+        <dd>
+            <span>{{vm.product.packagingType}}</span>
+        </dd>
+        <dt><span data-translate="test51App.product.unitPrice">Unit Price</span></dt>
+        <dd>
+            <span>{{vm.product.unitPrice}}</span>
+        </dd>
+        <dt><span data-translate="test51App.product.quntity">Quntity</span></dt>
+        <dd>
+            <span>{{vm.product.quntity}}</span>
+        </dd>
+        <dt><span data-translate="test51App.product.category">Category</span></dt>
+        <dd>
+            <span>{{vm.product.category}}</span>
+        </dd>
+        <dt><span data-translate="test51App.product.composition">Composition</span></dt>
+        <dd>
+            <span>{{vm.product.composition}}</span>
+        </dd>
+        <dt><span data-translate="test51App.product.formulation">Formulation</span></dt>
+        <dd>
+            <span>{{vm.product.formulation}}</span>
+        </dd>
+        <dt><span data-translate="test51App.product.imageId">Image Id</span></dt>
+        <dd>
+            <span>{{vm.product.imageId}}</span>
+        </dd>
+        <dt><span data-translate="test51App.product.ratings">Ratings</span></dt>
+        <dd>
+            <span>{{vm.product.ratings}}</span>
+        </dd>
+        <dt><span data-translate="test51App.product.eta">Eta</span></dt>
+        <dd>
+            <span>{{vm.product.eta | date:'medium'}}</span>
+        </dd>
+        <dt><span data-translate="test51App.product.timeRequired">Time Required</span></dt>
+        <dd>
+            <span>{{vm.product.timeRequired}}</span>
+        </dd>
+        <dt><span data-translate="test51App.product.isPackagingProvided">Is Packaging Provided</span></dt>
+        <dd>
+            <span>{{vm.product.isPackagingProvided}}</span>
+        </dd>
+        <dt><span data-translate="test51App.product.minOrderQuantity">Min Order Quantity</span></dt>
+        <dd>
+            <span>{{vm.product.minOrderQuantity}}</span>
+        </dd>
+        <dt><span data-translate="test51App.product.unit">Unit</span></dt>
+        <dd>
+            <span>{{vm.product.unit}}</span>
+        </dd>
+        <dt><span data-translate="test51App.product.vendorId">Vendor Id</span></dt>
+        <dd>
+            <span>{{vm.product.vendorId}}</span>
+        </dd>
+        <dt><span data-translate="test51App.product.subCategory">Sub Category</span></dt>
+        <dd>
+            <span>{{vm.product.subCategory}}</span>
+        </dd>
+        <dt><span data-translate="test51App.product.commentId">Comment Id</span></dt>
+        <dd>
+            <span>{{vm.product.commentId}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="product-detail.edit({id:vm.product.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

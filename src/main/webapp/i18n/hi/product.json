@@ -1,0 +1,39 @@
+{
+    "test51App": {
+        "product" : {
+            "home": {
+                "title": "Products",
+                "createLabel": "नया Product बनाएँ",
+                "createOrEditLabel": "Product बनाएँ या संपादित करें"
+            },
+            "created": "एक नया Product [identifier: {{ param }}] तैयार है",
+            "updated": "एक Product [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Product [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Product [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Product"
+            },
+            "productName": "Product Name",
+            "saltName": "Salt Name",
+            "description": "Description",
+            "packagingType": "Packaging Type",
+            "unitPrice": "Unit Price",
+            "quntity": "Quntity",
+            "category": "Category",
+            "composition": "Composition",
+            "formulation": "Formulation",
+            "imageId": "Image Id",
+            "ratings": "Ratings",
+            "eta": "Eta",
+            "timeRequired": "Time Required",
+            "isPackagingProvided": "Is Packaging Provided",
+            "minOrderQuantity": "Min Order Quantity",
+            "unit": "Unit",
+            "vendorId": "Vendor Id",
+            "subCategory": "Sub Category",
+            "commentId": "Comment Id"
+        }
+    }
+}

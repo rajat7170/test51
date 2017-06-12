@@ -1,0 +1,38 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.pharma",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "4.5.3",
+    "baseName": "test51",
+    "packageName": "com.pharma",
+    "packageFolder": "com/pharma",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "hibernateCache": "no",
+    "clusteredHttpSession": false,
+    "websocket": "spring-websocket",
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "prodDatabaseType": "mongodb",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSocialSignIn": true,
+    "jwtSecretKey": "02c1a3b1f67b58e94382125a0414a4e3160b9d16",
+    "clientFramework": "angular1",
+    "useSass": false,
+    "clientPackageManager": "yarn",
+    "applicationType": "monolith",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": [
+      "en",
+      "hi"
+    ]
+  }
+}

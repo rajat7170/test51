@@ -1,0 +1,39 @@
+{
+    "test51App": {
+        "product" : {
+            "home": {
+                "title": "Products",
+                "createLabel": "Create a new Product",
+                "createOrEditLabel": "Create or edit a Product"
+            },
+            "created": "A new Product is created with identifier {{ param }}",
+            "updated": "A Product is updated with identifier {{ param }}",
+            "deleted": "A Product is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Product {{ id }}?"
+            },
+            "detail": {
+                "title": "Product"
+            },
+            "productName": "Product Name",
+            "saltName": "Salt Name",
+            "description": "Description",
+            "packagingType": "Packaging Type",
+            "unitPrice": "Unit Price",
+            "quntity": "Quntity",
+            "category": "Category",
+            "composition": "Composition",
+            "formulation": "Formulation",
+            "imageId": "Image Id",
+            "ratings": "Ratings",
+            "eta": "Eta",
+            "timeRequired": "Time Required",
+            "isPackagingProvided": "Is Packaging Provided",
+            "minOrderQuantity": "Min Order Quantity",
+            "unit": "Unit",
+            "vendorId": "Vendor Id",
+            "subCategory": "Sub Category",
+            "commentId": "Comment Id"
+        }
+    }
+}

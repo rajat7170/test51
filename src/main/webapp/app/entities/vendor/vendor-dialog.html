@@ -1,0 +1,164 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()" show-validation>
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myVendorLabel" data-translate="test51App.vendor.home.createOrEditLabel">Create or edit a Vendor</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.vendor.id">
+            <label for="id" data-translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.vendor.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="test51App.vendor.name" for="field_name">Name</label>
+            <input type="text" class="form-control" name="name" id="field_name"
+                    ng-model="vm.vendor.name"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="test51App.vendor.companyName" for="field_companyName">Company Name</label>
+            <input type="text" class="form-control" name="companyName" id="field_companyName"
+                    ng-model="vm.vendor.companyName"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="test51App.vendor.address" for="field_address">Address</label>
+            <input type="text" class="form-control" name="address" id="field_address"
+                    ng-model="vm.vendor.address"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="test51App.vendor.city" for="field_city">City</label>
+            <input type="text" class="form-control" name="city" id="field_city"
+                    ng-model="vm.vendor.city"
+                    required/>
+            <div ng-show="editForm.city.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.city.$error.required" data-translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="test51App.vendor.state" for="field_state">State</label>
+            <input type="text" class="form-control" name="state" id="field_state"
+                    ng-model="vm.vendor.state"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="test51App.vendor.pincode" for="field_pincode">Pincode</label>
+            <input type="text" class="form-control" name="pincode" id="field_pincode"
+                    ng-model="vm.vendor.pincode"
+                    required/>
+            <div ng-show="editForm.pincode.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.pincode.$error.required" data-translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="test51App.vendor.mobile" for="field_mobile">Mobile</label>
+            <input type="text" class="form-control" name="mobile" id="field_mobile"
+                    ng-model="vm.vendor.mobile"
+                    required/>
+            <div ng-show="editForm.mobile.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.mobile.$error.required" data-translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="test51App.vendor.bioDlNo" for="field_bioDlNo">Bio Dl No</label>
+            <input type="text" class="form-control" name="bioDlNo" id="field_bioDlNo"
+                    ng-model="vm.vendor.bioDlNo"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="test51App.vendor.nonBioDlNo" for="field_nonBioDlNo">Non Bio Dl No</label>
+            <input type="text" class="form-control" name="nonBioDlNo" id="field_nonBioDlNo"
+                    ng-model="vm.vendor.nonBioDlNo"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="test51App.vendor.estb" for="field_estb">Estb</label>
+            <input type="text" class="form-control" name="estb" id="field_estb"
+                    ng-model="vm.vendor.estb"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="test51App.vendor.certification" for="field_certification">Certification</label>
+            <input type="text" class="form-control" name="certification" id="field_certification"
+                    ng-model="vm.vendor.certification"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="test51App.vendor.webSite" for="field_webSite">Web Site</label>
+            <input type="text" class="form-control" name="webSite" id="field_webSite"
+                    ng-model="vm.vendor.webSite"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="test51App.vendor.aboutCompany" for="field_aboutCompany">About Company</label>
+            <input type="text" class="form-control" name="aboutCompany" id="field_aboutCompany"
+                    ng-model="vm.vendor.aboutCompany"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="test51App.vendor.email" for="field_email">Email</label>
+            <input type="text" class="form-control" name="email" id="field_email"
+                    ng-model="vm.vendor.email"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="test51App.vendor.category" for="field_category">Category</label>
+            <input type="text" class="form-control" name="category" id="field_category"
+                    ng-model="vm.vendor.category"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="test51App.vendor.tin" for="field_tin">Tin</label>
+            <input type="text" class="form-control" name="tin" id="field_tin"
+                    ng-model="vm.vendor.tin"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="test51App.vendor.alternateMobile" for="field_alternateMobile">Alternate Mobile</label>
+            <input type="text" class="form-control" name="alternateMobile" id="field_alternateMobile"
+                    ng-model="vm.vendor.alternateMobile"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="test51App.vendor.commentId" for="field_commentId">Comment Id</label>
+            <input type="text" class="form-control" name="commentId" id="field_commentId"
+                    ng-model="vm.vendor.commentId"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="test51App.vendor.ratings" for="field_ratings">Ratings</label>
+            <input type="number" class="form-control" name="ratings" id="field_ratings"
+                    ng-model="vm.vendor.ratings"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="test51App.vendor.linkedWord" for="field_linkedWord">Linked Word</label>
+            <input type="text" class="form-control" name="linkedWord" id="field_linkedWord"
+                    ng-model="vm.vendor.linkedWord"
+                    />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span data-translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span data-translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

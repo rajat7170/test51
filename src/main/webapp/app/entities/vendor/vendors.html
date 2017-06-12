@@ -1,0 +1,98 @@
+<div>
+    <h2 data-translate="test51App.vendor.home.title">Vendors</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="vendor.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span  data-translate="test51App.vendor.home.createLabel">
+                        Create new Vendor
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr jh-sort="vm.predicate" ascending="vm.reverse" callback="vm.transition()">
+                    <th jh-sort-by="id"><span data-translate="global.field.id">ID</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="name"><span data-translate="test51App.vendor.name">Name</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="companyName"><span data-translate="test51App.vendor.companyName">Company Name</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="address"><span data-translate="test51App.vendor.address">Address</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="city"><span data-translate="test51App.vendor.city">City</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="state"><span data-translate="test51App.vendor.state">State</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="pincode"><span data-translate="test51App.vendor.pincode">Pincode</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="mobile"><span data-translate="test51App.vendor.mobile">Mobile</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="bioDlNo"><span data-translate="test51App.vendor.bioDlNo">Bio Dl No</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="nonBioDlNo"><span data-translate="test51App.vendor.nonBioDlNo">Non Bio Dl No</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="estb"><span data-translate="test51App.vendor.estb">Estb</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="certification"><span data-translate="test51App.vendor.certification">Certification</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="webSite"><span data-translate="test51App.vendor.webSite">Web Site</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="aboutCompany"><span data-translate="test51App.vendor.aboutCompany">About Company</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="email"><span data-translate="test51App.vendor.email">Email</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="category"><span data-translate="test51App.vendor.category">Category</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="tin"><span data-translate="test51App.vendor.tin">Tin</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="alternateMobile"><span data-translate="test51App.vendor.alternateMobile">Alternate Mobile</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="commentId"><span data-translate="test51App.vendor.commentId">Comment Id</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="ratings"><span data-translate="test51App.vendor.ratings">Ratings</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="linkedWord"><span data-translate="test51App.vendor.linkedWord">Linked Word</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="vendor in vm.vendors track by vendor.id">
+                    <td><a ui-sref="vendor-detail({id:vendor.id})">{{vendor.id}}</a></td>
+                    <td>{{vendor.name}}</td>
+                    <td>{{vendor.companyName}}</td>
+                    <td>{{vendor.address}}</td>
+                    <td>{{vendor.city}}</td>
+                    <td>{{vendor.state}}</td>
+                    <td>{{vendor.pincode}}</td>
+                    <td>{{vendor.mobile}}</td>
+                    <td>{{vendor.bioDlNo}}</td>
+                    <td>{{vendor.nonBioDlNo}}</td>
+                    <td>{{vendor.estb}}</td>
+                    <td>{{vendor.certification}}</td>
+                    <td>{{vendor.webSite}}</td>
+                    <td>{{vendor.aboutCompany}}</td>
+                    <td>{{vendor.email}}</td>
+                    <td>{{vendor.category}}</td>
+                    <td>{{vendor.tin}}</td>
+                    <td>{{vendor.alternateMobile}}</td>
+                    <td>{{vendor.commentId}}</td>
+                    <td>{{vendor.ratings}}</td>
+                    <td>{{vendor.linkedWord}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="vendor-detail({id:vendor.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-sm-down" data-translate="entity.action.view"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="vendor.edit({id:vendor.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-sm-down" data-translate="entity.action.edit"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="vendor.delete({id:vendor.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-sm-down" data-translate="entity.action.delete"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="text-center">
+        <jhi-item-count page="vm.page" total="vm.queryCount" items-per-page="vm.itemsPerPage"></jhi-item-count>
+        <uib-pagination class="pagination-sm" total-items="vm.totalItems" items-per-page="vm.itemsPerPage" ng-model="vm.page" ng-change="vm.transition()"></uib-pagination>
+    </div>
+</div>

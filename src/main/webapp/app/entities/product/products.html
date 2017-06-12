@@ -1,0 +1,96 @@
+<div>
+    <h2 data-translate="test51App.product.home.title">Products</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="product.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span  data-translate="test51App.product.home.createLabel">
+                        Create new Product
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr jh-sort="vm.predicate" ascending="vm.reverse" callback="vm.transition()">
+                    <th jh-sort-by="id"><span data-translate="global.field.id">ID</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="productName"><span data-translate="test51App.product.productName">Product Name</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="saltName"><span data-translate="test51App.product.saltName">Salt Name</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="description"><span data-translate="test51App.product.description">Description</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="packagingType"><span data-translate="test51App.product.packagingType">Packaging Type</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="unitPrice"><span data-translate="test51App.product.unitPrice">Unit Price</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="quntity"><span data-translate="test51App.product.quntity">Quntity</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="category"><span data-translate="test51App.product.category">Category</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="composition"><span data-translate="test51App.product.composition">Composition</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="formulation"><span data-translate="test51App.product.formulation">Formulation</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="imageId"><span data-translate="test51App.product.imageId">Image Id</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="ratings"><span data-translate="test51App.product.ratings">Ratings</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="eta"><span data-translate="test51App.product.eta">Eta</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="timeRequired"><span data-translate="test51App.product.timeRequired">Time Required</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="isPackagingProvided"><span data-translate="test51App.product.isPackagingProvided">Is Packaging Provided</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="minOrderQuantity"><span data-translate="test51App.product.minOrderQuantity">Min Order Quantity</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="unit"><span data-translate="test51App.product.unit">Unit</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="vendorId"><span data-translate="test51App.product.vendorId">Vendor Id</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="subCategory"><span data-translate="test51App.product.subCategory">Sub Category</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="commentId"><span data-translate="test51App.product.commentId">Comment Id</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="product in vm.products track by product.id">
+                    <td><a ui-sref="product-detail({id:product.id})">{{product.id}}</a></td>
+                    <td>{{product.productName}}</td>
+                    <td>{{product.saltName}}</td>
+                    <td>{{product.description}}</td>
+                    <td>{{product.packagingType}}</td>
+                    <td>{{product.unitPrice}}</td>
+                    <td>{{product.quntity}}</td>
+                    <td>{{product.category}}</td>
+                    <td>{{product.composition}}</td>
+                    <td>{{product.formulation}}</td>
+                    <td>{{product.imageId}}</td>
+                    <td>{{product.ratings}}</td>
+                    <td>{{product.eta | date:'medium'}}</td>
+                    <td>{{product.timeRequired}}</td>
+                    <td>{{product.isPackagingProvided}}</td>
+                    <td>{{product.minOrderQuantity}}</td>
+                    <td>{{product.unit}}</td>
+                    <td>{{product.vendorId}}</td>
+                    <td>{{product.subCategory}}</td>
+                    <td>{{product.commentId}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="product-detail({id:product.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-sm-down" data-translate="entity.action.view"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="product.edit({id:product.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-sm-down" data-translate="entity.action.edit"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="product.delete({id:product.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-sm-down" data-translate="entity.action.delete"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="text-center">
+        <jhi-item-count page="vm.page" total="vm.queryCount" items-per-page="vm.itemsPerPage"></jhi-item-count>
+        <uib-pagination class="pagination-sm" total-items="vm.totalItems" items-per-page="vm.itemsPerPage" ng-model="vm.page" ng-change="vm.transition()"></uib-pagination>
+    </div>
+</div>

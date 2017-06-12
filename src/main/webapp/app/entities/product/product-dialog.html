@@ -1,0 +1,155 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()" show-validation>
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myProductLabel" data-translate="test51App.product.home.createOrEditLabel">Create or edit a Product</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.product.id">
+            <label for="id" data-translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.product.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="test51App.product.productName" for="field_productName">Product Name</label>
+            <input type="text" class="form-control" name="productName" id="field_productName"
+                    ng-model="vm.product.productName"
+                    required/>
+            <div ng-show="editForm.productName.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.productName.$error.required" data-translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="test51App.product.saltName" for="field_saltName">Salt Name</label>
+            <input type="text" class="form-control" name="saltName" id="field_saltName"
+                    ng-model="vm.product.saltName"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="test51App.product.description" for="field_description">Description</label>
+            <input type="text" class="form-control" name="description" id="field_description"
+                    ng-model="vm.product.description"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="test51App.product.packagingType" for="field_packagingType">Packaging Type</label>
+            <input type="text" class="form-control" name="packagingType" id="field_packagingType"
+                    ng-model="vm.product.packagingType"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="test51App.product.unitPrice" for="field_unitPrice">Unit Price</label>
+            <input type="number" class="form-control" name="unitPrice" id="field_unitPrice"
+                    ng-model="vm.product.unitPrice"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="test51App.product.quntity" for="field_quntity">Quntity</label>
+            <input type="number" class="form-control" name="quntity" id="field_quntity"
+                    ng-model="vm.product.quntity"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="test51App.product.category" for="field_category">Category</label>
+            <input type="text" class="form-control" name="category" id="field_category"
+                    ng-model="vm.product.category"
+                    required/>
+            <div ng-show="editForm.category.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.category.$error.required" data-translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="test51App.product.composition" for="field_composition">Composition</label>
+            <input type="text" class="form-control" name="composition" id="field_composition"
+                    ng-model="vm.product.composition"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="test51App.product.formulation" for="field_formulation">Formulation</label>
+            <input type="text" class="form-control" name="formulation" id="field_formulation"
+                    ng-model="vm.product.formulation"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="test51App.product.imageId" for="field_imageId">Image Id</label>
+            <input type="text" class="form-control" name="imageId" id="field_imageId"
+                    ng-model="vm.product.imageId"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="test51App.product.ratings" for="field_ratings">Ratings</label>
+            <input type="number" class="form-control" name="ratings" id="field_ratings"
+                    ng-model="vm.product.ratings"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="test51App.product.eta" for="field_eta">Eta</label>
+                <div class="input-group">
+                    <input id="field_eta" type="text" class="form-control" name="eta" datetime-picker="{{dateformat}}" ng-model="vm.product.eta" is-open="vm.datePickerOpenStatus.eta"
+                    />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="vm.openCalendar('eta')"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="test51App.product.timeRequired" for="field_timeRequired">Time Required</label>
+            <input type="text" class="form-control" name="timeRequired" id="field_timeRequired"
+                    ng-model="vm.product.timeRequired"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="test51App.product.isPackagingProvided" for="field_isPackagingProvided">Is Packaging Provided</label>
+                <input type="checkbox" name="isPackagingProvided" id="field_isPackagingProvided"
+                          ng-model="vm.product.isPackagingProvided"/>
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="test51App.product.minOrderQuantity" for="field_minOrderQuantity">Min Order Quantity</label>
+            <input type="number" class="form-control" name="minOrderQuantity" id="field_minOrderQuantity"
+                    ng-model="vm.product.minOrderQuantity"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="test51App.product.unit" for="field_unit">Unit</label>
+            <input type="text" class="form-control" name="unit" id="field_unit"
+                    ng-model="vm.product.unit"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="test51App.product.vendorId" for="field_vendorId">Vendor Id</label>
+            <input type="text" class="form-control" name="vendorId" id="field_vendorId"
+                    ng-model="vm.product.vendorId"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="test51App.product.subCategory" for="field_subCategory">Sub Category</label>
+            <input type="text" class="form-control" name="subCategory" id="field_subCategory"
+                    ng-model="vm.product.subCategory"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="test51App.product.commentId" for="field_commentId">Comment Id</label>
+            <input type="text" class="form-control" name="commentId" id="field_commentId"
+                    ng-model="vm.product.commentId"
+                    />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span data-translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span data-translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

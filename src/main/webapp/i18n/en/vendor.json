@@ -1,0 +1,40 @@
+{
+    "test51App": {
+        "vendor" : {
+            "home": {
+                "title": "Vendors",
+                "createLabel": "Create a new Vendor",
+                "createOrEditLabel": "Create or edit a Vendor"
+            },
+            "created": "A new Vendor is created with identifier {{ param }}",
+            "updated": "A Vendor is updated with identifier {{ param }}",
+            "deleted": "A Vendor is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Vendor {{ id }}?"
+            },
+            "detail": {
+                "title": "Vendor"
+            },
+            "name": "Name",
+            "companyName": "Company Name",
+            "address": "Address",
+            "city": "City",
+            "state": "State",
+            "pincode": "Pincode",
+            "mobile": "Mobile",
+            "bioDlNo": "Bio Dl No",
+            "nonBioDlNo": "Non Bio Dl No",
+            "estb": "Estb",
+            "certification": "Certification",
+            "webSite": "Web Site",
+            "aboutCompany": "About Company",
+            "email": "Email",
+            "category": "Category",
+            "tin": "Tin",
+            "alternateMobile": "Alternate Mobile",
+            "commentId": "Comment Id",
+            "ratings": "Ratings",
+            "linkedWord": "Linked Word"
+        }
+    }
+}

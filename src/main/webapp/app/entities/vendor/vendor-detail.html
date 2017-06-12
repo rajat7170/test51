@@ -1,0 +1,99 @@
+
+<div>
+    <h2><span data-translate="test51App.vendor.detail.title">Vendor</span> {{vm.vendor.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="test51App.vendor.name">Name</span></dt>
+        <dd>
+            <span>{{vm.vendor.name}}</span>
+        </dd>
+        <dt><span data-translate="test51App.vendor.companyName">Company Name</span></dt>
+        <dd>
+            <span>{{vm.vendor.companyName}}</span>
+        </dd>
+        <dt><span data-translate="test51App.vendor.address">Address</span></dt>
+        <dd>
+            <span>{{vm.vendor.address}}</span>
+        </dd>
+        <dt><span data-translate="test51App.vendor.city">City</span></dt>
+        <dd>
+            <span>{{vm.vendor.city}}</span>
+        </dd>
+        <dt><span data-translate="test51App.vendor.state">State</span></dt>
+        <dd>
+            <span>{{vm.vendor.state}}</span>
+        </dd>
+        <dt><span data-translate="test51App.vendor.pincode">Pincode</span></dt>
+        <dd>
+            <span>{{vm.vendor.pincode}}</span>
+        </dd>
+        <dt><span data-translate="test51App.vendor.mobile">Mobile</span></dt>
+        <dd>
+            <span>{{vm.vendor.mobile}}</span>
+        </dd>
+        <dt><span data-translate="test51App.vendor.bioDlNo">Bio Dl No</span></dt>
+        <dd>
+            <span>{{vm.vendor.bioDlNo}}</span>
+        </dd>
+        <dt><span data-translate="test51App.vendor.nonBioDlNo">Non Bio Dl No</span></dt>
+        <dd>
+            <span>{{vm.vendor.nonBioDlNo}}</span>
+        </dd>
+        <dt><span data-translate="test51App.vendor.estb">Estb</span></dt>
+        <dd>
+            <span>{{vm.vendor.estb}}</span>
+        </dd>
+        <dt><span data-translate="test51App.vendor.certification">Certification</span></dt>
+        <dd>
+            <span>{{vm.vendor.certification}}</span>
+        </dd>
+        <dt><span data-translate="test51App.vendor.webSite">Web Site</span></dt>
+        <dd>
+            <span>{{vm.vendor.webSite}}</span>
+        </dd>
+        <dt><span data-translate="test51App.vendor.aboutCompany">About Company</span></dt>
+        <dd>
+            <span>{{vm.vendor.aboutCompany}}</span>
+        </dd>
+        <dt><span data-translate="test51App.vendor.email">Email</span></dt>
+        <dd>
+            <span>{{vm.vendor.email}}</span>
+        </dd>
+        <dt><span data-translate="test51App.vendor.category">Category</span></dt>
+        <dd>
+            <span>{{vm.vendor.category}}</span>
+        </dd>
+        <dt><span data-translate="test51App.vendor.tin">Tin</span></dt>
+        <dd>
+            <span>{{vm.vendor.tin}}</span>
+        </dd>
+        <dt><span data-translate="test51App.vendor.alternateMobile">Alternate Mobile</span></dt>
+        <dd>
+            <span>{{vm.vendor.alternateMobile}}</span>
+        </dd>
+        <dt><span data-translate="test51App.vendor.commentId">Comment Id</span></dt>
+        <dd>
+            <span>{{vm.vendor.commentId}}</span>
+        </dd>
+        <dt><span data-translate="test51App.vendor.ratings">Ratings</span></dt>
+        <dd>
+            <span>{{vm.vendor.ratings}}</span>
+        </dd>
+        <dt><span data-translate="test51App.vendor.linkedWord">Linked Word</span></dt>
+        <dd>
+            <span>{{vm.vendor.linkedWord}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="vendor-detail.edit({id:vm.vendor.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>
